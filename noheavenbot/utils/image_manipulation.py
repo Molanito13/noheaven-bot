@@ -13,7 +13,7 @@ def welcome_img(user_name: str):
     im = Image.open(welcome_img_path)
 
     #  User name text
-    font = ImageFont.truetype(font_path, 150)
+    font = ImageFont.truetype(font_path, 1500)
     txt = Image.new('L', (600, 400))
     d = ImageDraw.Draw(txt)
     d.text((0, 0), user_name,  font=font, fill=255)
